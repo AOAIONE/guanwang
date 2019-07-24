@@ -4706,18 +4706,18 @@ img {
   height:189px;
 }
 .team-members-tow figure:hover .services-item .services-item-top{
-  opacity:0.6;
-  filter:alpha(opacity=60); 
+  /* opacity:0.6;
+  filter:alpha(opacity=60);  */
   border:1px dashed #D3D3D3;
 
 }
 .team-members-tow figure:hover .services-item-bot{
   border:1px solid #27A6E8;
-  color:#27A6E8 !important;
+  color:#27A6E8;
 }
 .team-members-tow figure:hover .services-item .services-item-top1{
   border:1px solid #27A6E8;
-  color:#27A6E8 !important;
+  color:#27A6E8 ;
 
 }
 .team-members-tow figure:hover .services-item-bot1{
@@ -4770,6 +4770,7 @@ img {
 }
 .services-item .services-item-bot1 {
   position: absolute;
+  border:1px dashed #090909;
   bottom:0;
 }
 .services-item .services-item-top1 .info-title1{
@@ -4783,16 +4784,15 @@ img {
   right:27px;
   line-height: 22px;
 }
-.services-item .services-item-bot .whip{
+.services-item .whip{
   width:40px;
-  border:1px solid #ddd;
-  text-align: center;
-  margin: 0 auto;
+  height:1px;
+  background-color:  #ddd;
   margin-top:40px;
 }
-/* #counter .container{
-
-} */
+#services figure:hover .whip{
+  background-color: #27A6E8;
+}
 .counter-item{
   width:300px;
   height:400px;
@@ -4904,14 +4904,8 @@ display: none;
   height: 80px;
    background: #000;
 }
-@media (min-width: 1200px){
-   .nowContainer{
-  max-width: 1200px;
-}
-}
 .nowContainer{
   width: 100%;
-  display: flex;
 }
 #about{
   padding-top: 60px;
@@ -4923,11 +4917,14 @@ display: none;
   display: flex;
 }
 #about .about-thr .about-thr-left{
-  width:960px;
+  flex:1;
   border:1px dashed #bac0cb;
 }
+#about .about-thr .about-thr-left img{
+  height:100%;
+}
 #about .about-thr .about-thr-right{
-  width: 942px;
+  flex:1;
   padding-left:66px;
   padding-top:36px;
   background:rgba(240,240,240,1);
